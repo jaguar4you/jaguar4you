@@ -1,0 +1,64 @@
+markdown: kramdown
+# 마크다운은 크램다운으로 사용
+
+title: Jaguar's Home
+description: A minimal and beautiful site
+
+owner:
+  author: Jaekyu Cho
+  avatar: jaguar.jpg
+  email: jaguar4you@gmail.com
+
+
+lang: en
+
+paginate: 20
+# 한 페이지의 보여주는 글의 갯수
+
+url: https://jaguar4you.github.io
+
+production_url: https://jaguar4you.github./
+
+branch: master
+
+destination: ./output/
+# 지킬이 컴파일되고 생성되는 폴더 지정  
+
+
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-theme-hamilton
+
+ 
+# google_analytics: 
+# 구글에서 제공하는 블로그 방문 통계
+
+# disqus:
+# 댓글을 달 수 있도록 하는 기능
+
+# 지킬 컴파일시 필요없는 것들은 아래에 리스트 함
+exclude:
+  - scripts/
+  - README.md
+  - jekyll-theme-hamilton.gemspec
+
+
+
+
+
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+- title: More
+  sublinks:
+    - title: FAQ
+      url: /faq/
+    - title: Docs
+      url: /docs/
